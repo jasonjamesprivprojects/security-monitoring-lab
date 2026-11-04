@@ -57,11 +57,6 @@ Packet captures provide network evidence. SSH encrypts session contents, so pack
 - Wireshark visibility depends on the selected capture interface.
 - Windows 10 reflects the available lab host rather than a production operating-system recommendation.
 
-## Evidence
-Screenshots
-
-## Detection Evidence
-
 ## Detection Evidence
 
 ### Windows file integrity monitoring
@@ -80,6 +75,12 @@ Detected a simulated failed login using the nonexistent account wazuhtest. Windo
 Detected an incorrect password attempt when labuser tried to run sudo ls /root on ubuntu-endpoint.
 
 ![Linux sudo failure details](linux-sudo-failure-details.PNG)
+
+## Setup and Reports
+
+- [Lab setup and validation](docs/setup.md)
+- [Detection investigation report](reports/detection-investigation.md)
+- [Wireshark network analysis](reports/network-analysis.md)
 
 ## Learning Process
 The test results were generated and checked in my own lab.
