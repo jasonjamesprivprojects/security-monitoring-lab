@@ -58,7 +58,26 @@ Packet captures provide network evidence. SSH encrypts session contents, so pack
 - Windows 10 reflects the available lab host rather than a production operating-system recommendation.
 
 ## Evidence
-Screenshots, investigation reports, configuration excerpts and reviewed packet captures.
+Screenshots
+
+## Detection Evidence
+
+### Windows file integrity monitoring
+Detected a file modification and the creation and deletion of a test file.
+
+![File modified](screenshots/windows-file-modified.png)
+![File added and deleted](screenshots/windows-file-added-deleted.png)
+
+### Windows failed login
+Detected a simulated failed login using the nonexistent account wazuhtest. Windows recorded Event ID 4625.
+
+![Failed login alert](screenshots/windows-failed-login.png)
+![Failed login details](screenshots/windows-failed-login-details.png)
+
+### Linux failed sudo authentication
+Detected an incorrect password attempt when labuser tried to run sudo ls /root on ubuntu-endpoint.
+
+![Linux sudo failure details](screenshots/linux-sudo-failure-details.png)
 
 ## Learning Process
 The test results were generated and checked in my own lab.
