@@ -62,22 +62,24 @@ Screenshots
 
 ## Detection Evidence
 
+## Detection Evidence
+
 ### Windows file integrity monitoring
 Detected a file modification and the creation and deletion of a test file.
 
-![File modified](screenshots/windows-file-modified.png)
-![File added and deleted](screenshots/windows-file-added-deleted.png)
+![File modified](<windows-file modifed.PNG>)
+![File added and deleted](windows-file-added-deleted.PNG)
 
 ### Windows failed login
 Detected a simulated failed login using the nonexistent account wazuhtest. Windows recorded Event ID 4625.
 
-![Failed login alert](screenshots/windows-failed-login.png)
-![Failed login details](screenshots/windows-failed-login-details.png)
+![Failed login alert](windows-failed-login.PNG)
+![Failed login details](windows-failed-logon-details.PNG)
 
 ### Linux failed sudo authentication
 Detected an incorrect password attempt when labuser tried to run sudo ls /root on ubuntu-endpoint.
 
-![Linux sudo failure details](screenshots/linux-sudo-failure-details.png)
+![Linux sudo failure details](linux-sudo-failure-details.PNG)
 
 ## Learning Process
 The test results were generated and checked in my own lab.
